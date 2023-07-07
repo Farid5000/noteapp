@@ -17,7 +17,7 @@ export const Sidebar = ({ onNewNote }) => {
 
   return (
     <div>
-      <aside className="w-[90px] border-r-2 bg-red flex flex-col items-center p-8 space-y-4">
+      <aside className="w-[90px] h-full border-r-2 bg-red flex flex-col items-center p-8 space-y-4">
         <div className="font-bold">Me.</div>
         <div>
           {/* Dibawah ini merupakan action dari code const [onAddMode, setonAddMode] = useState(false); */}
@@ -51,15 +51,16 @@ export const Sidebar = ({ onNewNote }) => {
               onClick={onNewNote}
               className={
                 onAddMode
-                  ? "bg-yellow-400 w-5 h-5 rounded-full translate-y-4 -z-10 transition duration-300 cursor-pointer"
-                  : "bg-yellow-400 w-5 h-5 rounded-full  -translate-y-4 -z-10 transition duration-300 cursor-pointer"
+                  ? "bg-yellow-400 w-5 h-5 rounded-full translate-y-10 z-10 transition duration-300 cursor-pointer"
+                  : "bg-yellow-400 w-5 h-5 rounded-full  -translate-y-10 -z-10 transition duration-300 cursor-pointer"
               }
             ></div>
             <div
+              onClick={onNewNote}
               className={
                 onAddMode
-                  ? "bg-rose-400 w-5 h-5 rounded-full translate-y-8 -z-10 transition duration-300 cursor-pointer"
-                  : "bg-rose-400 w-5 h-5 rounded-full  -translate-y-8 -z-10 transition duration-300 cursor-pointer"
+                  ? "bg-rose-400 w-5 h-5 rounded-full translate-y-20 z-10 transition duration-300 cursor-pointer"
+                  : "bg-rose-400 w-5 h-5 rounded-full  -translate-y-20 -z-10 transition duration-300 cursor-pointer"
               }
             ></div>
           </div>

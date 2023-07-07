@@ -20,7 +20,7 @@ export const Editor = () => {
   };
 
   return (
-    <DasboardTemplate onNewNote={createNote}>
+    <DasboardTemplate onNewNotes={createNote}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {notes.map(({ id, body, color }) => {
           return <Note key={id} body={body} color={color} />;
