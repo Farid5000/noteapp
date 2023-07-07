@@ -10,7 +10,7 @@
 import { Plus } from "lucide-react";
 import { useState } from "react";
 
-export const Sidebar = () => {
+export const Sidebar = ({ onNewNote }) => {
   // Code berikut untuk menambahkan action
   //Artinya
   const [onAddMode, setOnAddMode] = useState(false);
@@ -47,6 +47,8 @@ export const Sidebar = () => {
           {/* Ada z index yaitu layer dalam membuat objek, agar bisa di atas dan kebawahin maka gunakan z  */}
           <div className="flex flex-col items-center space-y-4">
             <div
+              // Promps berbentuk function yang di pass ke parent (DasboardTemplate) atau sederhananya ketika diclick dioper ke dasboard
+              onClick={onNewNote}
               className={
                 onAddMode
                   ? "bg-yellow-400 w-5 h-5 rounded-full translate-y-10 -z-10 transition duration-300 cursor-pointer"

@@ -1,9 +1,12 @@
 import React from "react";
 
-const Note = () => {
+const Note = ({ body, color }) => {
   return (
-    <div className="w-full h-60 bg-yellow-300 p-6 rounded-xl text-xl font-medium tracking-tight">
-      Editor
+    <div
+      style={{ background: color }}
+      className="w-full h-60 p-6 rounded-xl text-xl font-medium tracking-tight"
+    >
+      {body}
     </div>
   );
 };

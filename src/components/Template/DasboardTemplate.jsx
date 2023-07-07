@@ -4,10 +4,10 @@
 import Sidebar from "./Sidebar";
 import SearchBar from "../App/SearchBar";
 
-export const DasboardTemplate = ({ children }) => {
+export const DasboardTemplate = ({ children, onNewNote }) => {
   return (
     <main className="flex h-screen">
-      <Sidebar />
+      <Sidebar onNewNote={() => onNewNote()} />
       <section className="w-[calc(100vw-90px)] p-7 space-y-8 ">
         <SearchBar />
         <div>{children}</div>
