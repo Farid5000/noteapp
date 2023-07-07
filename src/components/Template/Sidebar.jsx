@@ -49,15 +49,15 @@ export const Sidebar = () => {
             <div
               className={
                 onAddMode
-                  ? "bg-yellow-400 w-5 h-5 rounded-full translate-y-10 -z-10 transition duration-300"
-                  : "bg-yellow-400 w-5 h-5 rounded-full  -translate-y-10 -z-10 transition duration-300"
+                  ? "bg-yellow-400 w-5 h-5 rounded-full translate-y-10 -z-10 transition duration-300 cursor-pointer"
+                  : "bg-yellow-400 w-5 h-5 rounded-full  -translate-y-10 -z-10 transition duration-300 cursor-pointer"
               }
             ></div>
             <div
               className={
                 onAddMode
-                  ? "bg-rose-400 w-5 h-5 rounded-full translate-y-20 -z-10 transition duration-300"
-                  : "bg-rose-400 w-5 h-5 rounded-full  -translate-y-20 -z-10 transition duration-300"
+                  ? "bg-rose-400 w-5 h-5 rounded-full translate-y-20 -z-10 transition duration-300 cursor-pointer"
+                  : "bg-rose-400 w-5 h-5 rounded-full  -translate-y-20 -z-10 transition duration-300 cursor-pointer"
               }
             ></div>
           </div>
